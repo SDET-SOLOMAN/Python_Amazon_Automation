@@ -16,7 +16,6 @@ Locator Types:
 
 In this Framework, I will be using mostly XPath, CSS Selector, sometimes By ID and By Name.
 ----------------------------
-
 By Name Examples:
 By.NAME, 'k'
 
@@ -29,14 +28,7 @@ $x("//div[contains(@class, 'a-row a-spacing-base')]//label[@for='ap_customer_nam
 $x("//div[contains(@class, 'all a-spacing-top')]/span[@class='a-color-state a-text-bold']")
 
 
----------------------------------
 #CSS SELECTORS
-
-tag#id --> $$('#twotabserachBox')
-tag.class --> $$("div.nav-search-field input.nav-input") (can use > for child)
-tag[attribute=value] --> $$("input[name='sup']") or $$("input[name*='su']") anything that is not class
-tag.class[attribute=value]
-tag1 tag2.class - tag2 with a class is inside tag1
 
 Linking to Tag:
 $$('#twotabsearchtextbox')
