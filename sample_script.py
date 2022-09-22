@@ -4,7 +4,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
 
 # we are going to initiate driver
-start_chrome = Service('/Users/mikesoloman/Desktop/Python_Amazon_Automation/chromedriver')
+start_chrome = Service('C:\\Users\\Buywi\\Desktop\\QA Automation Practice\\'
+                       'Python_Amazon_Automation\\chromedriver.exe')
 driver = webdriver.Chrome(service=start_chrome)
 driver.maximize_window()
 
