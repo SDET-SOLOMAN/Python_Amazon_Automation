@@ -1,5 +1,5 @@
 # Created by Buywi at 9/21/2022
-Feature: Test Scenarios for Amazon home Page
+Feature: Test Scenarios for Amazon Home Page
 
   Scenario Outline: User can search for items and verify user search results
     Given Go to Amazon Home page
