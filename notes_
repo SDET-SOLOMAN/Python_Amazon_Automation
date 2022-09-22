@@ -1,0 +1,7 @@
+
+#CSS Locators
+tag#id --> $$('#twotabserachBox')
+tag.class --> $$("div.nav-search-field input.nav-input") (can use > for child)
+tag[attribute=value] --> $$("input[name='sup']") or $$("input[name*='su']") anything that is not class
+tag.class[attribute=value]
+tag1 tag2.class - tag2 with a class is inside tag1
