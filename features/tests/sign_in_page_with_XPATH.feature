@@ -1,4 +1,4 @@
-# Created by Buywi at 9/21/2022
+# Created by mikeSoloman at 9/21/2022
 Feature: Test Scenarios for Amazon Sign In Page
 
   Scenario: User can go through Sign In Links and Fields
