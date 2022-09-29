@@ -16,3 +16,4 @@ Feature: Test Scenarios for Amazon Today's Deals
     Examples:
       | search_result   | query_item |   search_text   |
       | Today's Deals   | Watches    |   watch         |
+      | Today's Deals   | Glasses    |   glasses       |

@@ -56,8 +56,10 @@ def click_the_first_item(context):
 @when("Add the item to the cart")
 def add_the_item(context):
     context.driver.find_element(*ADD_ITEM).click()
-    # context.driver.find_element(*NO_THANKS).click()
-    # context.driver.find_element(*PROCEED_CHECKOUT).click()
+    if len(context.driver.find_elements(*NO_THANKS)) == 1:
+        context.driver.find_element(*NO_THANKS).click()
+    if len(context.driver.find_elements(*PROCEED_CHECKOUT)) == 1:
+        context.driver.find_element(*PROCEED_CHECKOUT).click()
 
 
 @when("Open Cart Page")
@@ -69,4 +71,4 @@ def cart_page(context):
 def is_cart_matches_added(context, search_text):
     actual_item = context.driver.find_element(*ACTUAL_CART_ITEM).text
     print(actual_item)
-    assert search_text in actual_item, f"It's not matching"
+    assert search_text in actual_item.lower(), f"It's not matching"
