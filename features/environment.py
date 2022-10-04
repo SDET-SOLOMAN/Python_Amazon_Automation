@@ -9,7 +9,8 @@ def browser_init(context):
     """
 
     start_chrome = Service('/Users/mikesoloman/Desktop/Python_Amazon_Automation/chromedriver')
-    context.driver = webdriver.Chrome(executable_path= '/Users/mikesoloman/Desktop/Python_Amazon_Automation/chromedriver')
+    context.driver = webdriver.Chrome(executable_path= "/Users/mikesoloman/Desktop/Python_Amazon_Automation"
+                                                       "/chromedriver")
     # context.browser = webdriver.Safari()
     # context.browser = webdriver.Firefox()
 

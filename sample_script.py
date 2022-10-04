@@ -30,3 +30,23 @@ assert 'Dress' in driver.find_element(By.XPATH, "//div[contains(@class,'commerci
 
 # close chrome
 driver.quit()
+
+
+
+
+
+
+
+
+
+
+
+
+num = 84434374433
+
+num_2 = 0
+
+while num > 10:
+    num_2 = num % 10
+    num //= 10
+print(num_2)
