@@ -22,9 +22,11 @@ def is_text1(context, text_1):
 @when("Loop through links and verify")
 def is_text_matches(context):
     context.my_links = context.driver.find_elements(*MY_LINKS)
-    expected_text = ["New Releases", "Movers & Shakers", "Most Wished For", "Gift Ideas"]
-    index = 0
-    for char in context.my_links[1:]:
-        print(char.text, expected_text)
-        assert expected_text[index] in char.text, f"Expected text was {expected_text[index]}, but actual text is {char.text}"
-        index += 1
+    expected_text = ["Best Sellers","New Releases", "Movers & Shakers", "Most Wished For", "Gift Ideas"]
+    for char in range(len(context.my_links)):
+        link = context.driver.find_elements(*MY_LINKS)[char]
+        link_text = link.text
+        link.click
+        print(link_text)
+        print(expected_text[char])
+        assert expected_text[char] in link_text, f"expected text was {expected_text}, but we got {link_text}"
